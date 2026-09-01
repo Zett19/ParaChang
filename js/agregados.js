@@ -7,6 +7,6 @@ function irA() {
     var seccion = $(this).attr("href");
     $("body, html").animate({
         scrollTop: $(seccion).offset().top
-    }, 1000);
+    }, 500);
     return false;
 }
