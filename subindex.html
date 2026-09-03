@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Some Brostep</title>
+
+        <script>
+
+            good = 0;
+            wrong = 0;
+
+            function operational(value) {
+                if (value == 1) {
+                    good++;
+                    /*pageSays();*/
+                } else if (value == 0) {
+                    wrong++;
+                    /*pageSays();*/
+                }
+
+                alert("Buenas: " + good + "      Malas:" + wrong);
+            }
+
+            function pageSays() {
+                imRandom = Math.floor(Math.random() * (0 - 5))
+
+                if (imRandom == -1) {
+                    alert("¿Estas seguro? No soy un experto, pero podrías estar mal.");
+                } else if (imRandom == -2) {
+                    alert("Tal vez estes bien, la verdad, yo no sé la respuesta de esta.");
+                } else if (imRandom == -3) {
+                    alert("Espero que estes bien, porque parece que dudas.");
+                } else if (imRandom == -4) {
+                    alert("¿De verdad piensas que esa es la respuesta? Te deseo lo mejor.");
+                } else if (imRandom == -5) {
+                    alert("Esa estuvo dificil, pero tengo mis dudas, ¿tú no?");
+                }
+
+            }
+        </script>
+    </head>
+
+    <body>
+        <h1>Items situacionales en LoL</h1>
+        <form name="formularOne">
+            El equipo enemigo está conformado por un Malphite top, un Garen jungla, Riven mid, Swain soporte <br />
+            y un Ezreal adc ¿Qué item con penetración de armadura será más útil si estás usando un Lucian<br />
+            <input type="radio" name="answerOne" onclick="operational(1)">Recordatorio Mortal<br />
+            <input type="radio" name="answerOne" onclick="operational(0)">Cuchilla Oscura<br />
+            <input type="radio" name="answerOne" onclick="operational(1)">Recuerdos de Lord Domink<br />
+            <input type="radio" name="answerOne" onclick="operational(0)">Rencor de Serylda<br />
+
+            <br />Acaban de hacer un exterminio al minuto 22, el primero en morir fue el Darius top feed, tiene pantalla gris por treinta segundos<br />
+            más, pero ninguna línea está pusheada. Todo tu equipo sobrevivió con más de un cuarto de la vida ¿Qué es lo más sensato?<br />
+            <input type="radio" name="answerTwo" onclick="operational(0)">Baron Nashor<br />
+            <input type="radio" name="answerTwo" onclick="operational(0)">Tercer Drake de la partida (segundo para ustedes)<br />
+            <input type="radio" name="answerTwo" onclick="operational(1)">Pushear la midlane y ver si se puede tumbar la tier 2 o 3<br />
+            <input type="radio" name="answerTwo" onclick="operational(1)">Backear y comprar con los shutdown<br />
+
+            <br />Elegiste Pantheon top para la partida, tu contrincante en línea es un Oorn, pero el resto del equipo es Jinx, Lulu, Ahri y<br />
+            Kindred ¿Qué tipo de runas serían las ideales tomando en cuenta la composición del equipo y no solo tu laner rival?<br />
+            <input type="radio" name="answerThree" onclick="operational(0)">Conquistador<br />
+            <input type="radio" name="answerThree" onclick="operational(1)">Estrategia ofensiva<br />
+            <input type="radio" name="answerThree" onclick="operational(1)">Electrocutar<br />
+            <input type="radio" name="answerThree" onclick="operational(0)">Cometa arcano<br />
+
+            <br />Eres un Nasus jungla, la mid y la bot están pusheadas, al top lo está gankeando el jg enemigo; tú acabas de matar<br />
+            al escurridizo de la fosa del dragón. Apenas es minuto 4 de la partida. ¿Qué deberías hacer para escalar mejor?<br />
+            <input type="radio" name="answerFour" onclick="operational(1)">Backear y comprar con el full clean de la jungla<br />
+            <input type="radio" name="answerFour" onclick="operational(0)">Bajar a la botlane y divear a los enemigos<br />
+            <input type="radio" name="answerFour" onclick="operational(0)">Subir a ver si puedes hacer o robar el escurridizo de la fosa de Barón<br />
+            <input type="radio" name="answerFour" onclick="operational(1)">Robar el Blue y sapo enemigo para acumular más cargas<br />
+
+            <br />Estás en selección de campeones, tus enemigos son: Irelia top, Briar jg, Locke mid, Draven adc y Tresh sup. Por otro lado tu<br />
+            equipo es: Cho'Gath top, Graves jg, Viktor mid y Jinx adc. ¿Qué soporte elegirías para complementar la composición de tu equipo?<br />
+            <input type="radio" name="answerFive" onclick="operational(0)">Pyke<br />
+            <input type="radio" name="answerFive" onclick="operational(1)">Lulu<br />
+            <input type="radio" name="answerFive" onclick="operational(1)">Milo<br />
+            <input type="radio" name="answerFive" onclick="operational(0)">Pantheon<br />
+        </form>
+        <!--<h1>NumeroDeBuenas</h1>-->
+    </body>
+</html>
